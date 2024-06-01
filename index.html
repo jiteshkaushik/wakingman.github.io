@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waking man anmation</title>     
+    <style>
+        body{
+            background-color: orange;
+        }
+        .road{
+            border-bottom: 7px dashed black;
+
+        }
+        .panda{
+            background-image: url(./waking\ man.png);
+            width: 75px;
+            height: 400px;
+            animation: walk 1s steps(8) infinite, forward 5s linear infinite ;
+           
+        }
+        @keyframes walk {
+            0%{
+                background-position: 0px;
+
+            }
+            100%{
+                background-position: 600px;
+            }
+        }
+        @keyframes forward {
+             0%{
+                transform: translateX(-200px);
+             }
+             100%{
+                transform: translateX(1200px);
+             }
+        }
+    </style>     
+</head>
+<body>
+    <div class="panda"></div>
+    <div class="road"></div>
+</body>
+</html>
